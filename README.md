@@ -1,24 +1,7 @@
-# weather_app
+# Sunny the Weather App
 
-## Project setup
-```
-yarn install
-```
+This is a simple weather app as an introduction to transitions. The app was intented to be showcased in the smallest screen size. 
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Heroku app link:
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://sunny-always.herokuapp.com/
