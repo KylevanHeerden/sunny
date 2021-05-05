@@ -2,6 +2,6 @@
 
 This is a simple weather app as an introduction to vue transitions. The app was intented to be showcased in the smallest screen size. 
 
-## Heroku app link:
+## Demo link:
 
-https://sunny-always.herokuapp.com/
+https://sunny-weather-app0.web.app/
