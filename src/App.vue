@@ -6,6 +6,12 @@
     "
   >
     <main>
+      <div class="headingDiv">
+        <h3>
+          Make your browser as narrow as possible and search for your town.
+        </h3>
+      </div>
+
       <div class="search-box">
         <input
           type="text"
@@ -41,7 +47,7 @@ export default {
       api_key: "4af1ca68bcf7348b0fae49dd7ccd0e97",
       url_base: "https://api.openweathermap.org/data/2.5/",
       query: "",
-      weather: {}
+      weather: {},
     };
   },
   methods: {
@@ -50,7 +56,7 @@ export default {
         fetch(
           `${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`
         )
-          .then(res => {
+          .then((res) => {
             return res.json();
           })
           .then(this.setResults);
@@ -73,7 +79,7 @@ export default {
         "September",
         "October",
         "November",
-        "December"
+        "December",
       ];
       let days = [
         "Sunday",
@@ -82,7 +88,7 @@ export default {
         "Wednesday",
         "Thursday",
         "Friday",
-        "Saturday"
+        "Saturday",
       ];
 
       let day = days[d.getDay()];
@@ -91,8 +97,8 @@ export default {
       let year = d.getFullYear();
 
       return `${day} ${date} ${month} ${year}`;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -101,6 +107,16 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.headingDiv {
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 body {
